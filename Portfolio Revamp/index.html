@@ -1,0 +1,1513 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Silindile Kunene | Graphic Designer & UX/UI Designer South Africa</title>
+
+<meta name="description" content="Professional Graphic Designer and UX/UI Designer in South Africa specializing in branding, logo design, web design, and digital product experiences. Available for freelance, contract, and full-time opportunities.">
+<meta name="keywords" content="Graphic Designer South Africa, UX UI Designer Johannesburg, Branding Designer, Logo Design, Web Designer, Freelance Designer, Visual Identity, Creative Designer Portfolio, UI UX Portfolio South Africa">
+<meta name="author" content="Silindile Kunene">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#213a58">
+<meta property="og:title" content="Silindile Kunene | Graphic Designer & UX/UI Designer South Africa">
+<meta property="og:description" content="Portfolio of Silindile Kunene, a South African graphic designer and UX/UI designer specializing in branding, digital experiences, and visual identity systems.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Silindile Kunene | Graphic Designer & UX/UI Designer South Africa">
+<meta name="twitter:description" content="Graphic design, branding, logo systems, and UX/UI portfolio work by Silindile Kunene.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600&family=Montserrat:wght@400;600&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --c1: #80ee98;
+  --c2: #46dfb1;
+  --c3: #09d1c7;
+  --c4: #15919b;
+  --c5: #0c6478;
+  --c6: #213a58;
+  --glass: rgba(255, 255, 255, 0.08);
+  --stroke: rgba(255, 255, 255, 0.22);
+  --text-soft: rgba(255, 255, 255, 0.78);
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(128, 238, 152, 0.12), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(9, 209, 199, 0.12), transparent 28%),
+    var(--c6);
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+body.is-loading {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3.5rem;
+  z-index: 2000;
+  padding: 0.85rem 1.1rem;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--c6);
+  text-decoration: none;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus-visible {
+  top: 1rem;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--c1);
+  outline-offset: 4px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  width: min(var(--max-width), calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  color: var(--text-soft);
+  font-size: clamp(1rem, 1.8vw, 1.08rem);
+}
+
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(128, 238, 152, 0.18), transparent 25%),
+    radial-gradient(circle at 80% 30%, rgba(9, 209, 199, 0.16), transparent 28%),
+    linear-gradient(145deg, rgba(12, 100, 120, 0.96), rgba(33, 58, 88, 0.98));
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+.site-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-panel {
+  width: min(100%, 28rem);
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(5, 18, 28, 0.35);
+}
+
+.loader-mark {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 auto 1.25rem;
+  border-radius: 1.5rem;
+  display: grid;
+  place-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background: linear-gradient(135deg, var(--c1), var(--c3));
+  box-shadow: 0 18px 35px rgba(9, 209, 199, 0.25);
+  animation: loaderFloat 2.6s ease-in-out infinite;
+}
+
+.loader-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin-bottom: 0.65rem;
+}
+
+.loader-text {
+  max-width: 26ch;
+  margin: 0 auto 1.5rem;
+}
+
+.loader-bar {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.loader-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 38%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--c1), var(--c3), var(--c4));
+  animation: loaderSweep 1.2s ease-in-out infinite;
+}
+
+@keyframes loaderFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes loaderSweep {
+  0% {
+    transform: translateX(-120%);
+  }
+
+  100% {
+    transform: translateX(320%);
+  }
+}
+
+.bg-spheres {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sphere {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(6px);
+}
+
+.s1 { width: 220px; height: 220px; top: 8%; left: 6%; background: linear-gradient(90deg, #80ee98, #46dfb1); }
+.s2 { width: 140px; height: 140px; top: 18%; left: 72%; background: linear-gradient(90deg, #09d1c7, #15919b); }
+.s3 { width: 320px; height: 320px; top: 55%; left: 10%; background: linear-gradient(90deg, #0c6478, #213a58); }
+.s4 { width: 110px; height: 110px; top: 75%; left: 78%; background: linear-gradient(90deg, #46dfb1, #09d1c7); }
+.s5 { width: 260px; height: 260px; top: 3%; left: 82%; background: linear-gradient(90deg, #80ee98, #15919b); }
+.s6 { width: 180px; height: 180px; top: 45%; left: 55%; background: linear-gradient(90deg, #213a58, #0c6478); }
+
+.nav {
+  position: sticky;
+  top: 1rem;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.nav-inner {
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.9rem 1.35rem;
+  border-radius: 999px;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(12px);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.nav img {
+  width: 45px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.nav-toggle {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  background: rgba(128, 238, 152, 0.14);
+  border-color: rgba(128, 238, 152, 0.4);
+  transform: translateY(-1px);
+}
+
+.nav-toggle-bar {
+  position: relative;
+  width: 1.1rem;
+  height: 2px;
+  background: currentColor;
+  border-radius: 999px;
+  transition: background 0.25s ease;
+}
+
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1.1rem;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 0.25s ease, top 0.25s ease, bottom 0.25s ease;
+}
+
+.nav-toggle-bar::before {
+  top: -0.38rem;
+}
+
+.nav-toggle-bar::after {
+  bottom: -0.38rem;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  list-style: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.35rem 0;
+  color: rgba(255, 255, 255, 0.86);
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--c1), var(--c3));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--c1);
+  transform: translateY(-2px);
+}
+
+.nav a:hover::after,
+.nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: clamp(3rem, 8vw, 6rem) 0;
+}
+
+.hero p,
+.about p,
+.cta p {
+  max-width: 60ch;
+}
+
+.hero span {
+  color: var(--c1);
+}
+
+.hero-name {
+  display: inline-block;
+  min-width: 0.5ch;
+  transition: opacity 0.35s ease, transform 0.35s ease, letter-spacing 0.35s ease;
+}
+
+.hero-name.is-switching {
+  opacity: 0.35;
+  transform: translateY(-4px);
+}
+
+.hero-img {
+  justify-self: end;
+  width: min(100%, 420px);
+}
+
+.hero-img img,
+.about img {
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+}
+
+.hero-img img {
+  border-radius: 30px;
+}
+
+.work {
+  padding: 1rem 0 0;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.work-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(12px);
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.work-card:hover img,
+.work-card:focus-within img {
+  transform: scale(1.04);
+}
+
+.work-trigger {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  text-align: left;
+}
+
+.work-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.15rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(9, 20, 32, 0.82));
+}
+
+.work-overlay strong,
+.work-overlay span {
+  display: block;
+}
+
+.work-overlay strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.work-overlay span {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(6, 15, 24, 0.78);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.lightbox-dialog {
+  position: relative;
+  width: min(1100px, 100%);
+  max-height: min(88vh, 900px);
+  overflow-y: auto;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04)),
+    rgba(12, 25, 39, 0.95);
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.4);
+}
+
+.lightbox-close {
+  position: sticky;
+  top: 1rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.lightbox-content {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.project-panel {
+  display: none;
+  gap: 1.5rem;
+}
+
+.project-panel.is-active {
+  display: grid;
+}
+
+.project-hero {
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.project-hero img,
+.project-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-copy {
+  padding: 0.35rem 0;
+}
+
+.project-kicker {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c1);
+}
+
+.project-copy h3 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin-bottom: 0.9rem;
+}
+
+.project-copy p {
+  max-width: 65ch;
+}
+
+.project-meta,
+.project-stack,
+.project-stats,
+.project-column {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-meta {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.meta-card,
+.stack-card,
+.stat-card,
+.note-card {
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.meta-card span,
+.stack-card span,
+.stat-card span {
+  display: block;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+  margin-bottom: 0.55rem;
+}
+
+.project-duo,
+.project-mosaic,
+.project-split,
+.project-aside,
+.project-editorial,
+.project-timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-duo {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.project-stack {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-mosaic {
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: start;
+}
+
+.project-shot {
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 220px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-split {
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+}
+
+.project-aside {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.project-editorial {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-editorial .project-copy,
+.project-editorial .note-card {
+  grid-column: span 3;
+}
+
+.project-timeline {
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-story {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.story-block {
+  display: grid;
+  gap: 1rem;
+}
+
+.story-block--intro {
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: start;
+}
+
+.story-block--duo {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.story-block--aside {
+  grid-template-columns: 0.75fr 1.25fr;
+  align-items: start;
+}
+
+.story-copy {
+  padding: 0.2rem 0;
+}
+
+.story-copy h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.05;
+  margin-bottom: 0.75rem;
+}
+
+.story-copy p + p {
+  margin-top: 0.65rem;
+}
+
+.story-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c1);
+  margin-bottom: 0.7rem;
+}
+
+.project-gallery-flow {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.gallery-intro {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.gallery-grid-four {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-feature {
+  display: grid;
+  grid-template-columns: 1fr 0.34fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.gallery-feature-copy {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.gallery-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gallery-feature .project-shot {
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+}
+
+.project-sequence {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.sequence-intro {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.sequence-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sequence-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sequence-center {
+  width: min(100%, 38rem);
+  margin: 0 auto;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--c2);
+}
+
+.about {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  padding: clamp(4rem, 8vw, 6rem) 0;
+}
+
+.about img {
+  border-radius: 24px;
+  justify-self: end;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding-bottom: clamp(4rem, 8vw, 6rem);
+}
+
+.card {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 18px 40px rgba(8, 24, 38, 0.14);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  text-align: center;
+  padding: clamp(4rem, 8vw, 6rem) 1rem;
+}
+
+.cta h2,
+.cta p {
+  text-align: center;
+}
+
+.cta p {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta p + p {
+  margin-top: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--glass);
+  border-top: 1px solid var(--stroke);
+  backdrop-filter: blur(12px);
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .about,
+  .cards,
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .about {
+    text-align: center;
+  }
+
+  .hero p,
+  .about p,
+  .cta p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-img,
+  .about img {
+    justify-self: center;
+  }
+
+  .cards {
+    gap: 1rem;
+  }
+
+  .project-meta,
+  .project-duo,
+  .project-stack,
+  .project-mosaic,
+  .project-column,
+  .project-split,
+  .project-aside,
+  .project-editorial,
+  .project-timeline,
+  .story-block--intro,
+  .story-block--duo,
+  .story-block--aside,
+  .gallery-intro,
+  .gallery-grid-four,
+  .gallery-feature,
+  .gallery-strip,
+  .sequence-intro,
+  .sequence-row,
+  .sequence-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .project-editorial .project-copy,
+  .project-editorial .note-card {
+    grid-column: span 1;
+  }
+
+  .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    top: 0;
+    padding: 0.75rem;
+  }
+
+  .nav-inner {
+    border-radius: 28px;
+    padding: 1rem;
+    align-items: stretch;
+  }
+
+  .nav-brand {
+    justify-content: flex-start;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease, margin-top 0.25s ease;
+  }
+
+  .nav-menu.is-open {
+    max-height: 18rem;
+    opacity: 1;
+    margin-top: 0.9rem;
+  }
+
+  .nav ul {
+    gap: 0.75rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav a {
+    display: block;
+    padding: 0.85rem 1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .nav a::after {
+    display: none;
+  }
+
+  section {
+    width: min(var(--max-width), calc(100% - 1.25rem));
+  }
+
+  .hero {
+    padding-top: 2.5rem;
+  }
+
+  .hero-img {
+    width: min(100%, 360px);
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .cta {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .lightbox {
+    padding: 0.5rem;
+  }
+
+  .lightbox-dialog {
+    max-height: 92vh;
+    border-radius: 22px;
+  }
+
+  .lightbox-content {
+    padding: 0 1rem 1rem;
+  }
+
+  .lightbox-close {
+    width: 2.75rem;
+    height: 2.75rem;
+    top: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sphere {
+    opacity: 0.12;
+    transform: scale(0.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .loader-mark,
+  .loader-bar::after {
+    animation: none !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body class="is-loading">
+<div class="site-loader" id="site-loader" aria-live="polite" aria-label="Page is loading">
+  <div class="loader-panel">
+    <div class="loader-mark" aria-hidden="true">SK</div>
+    <p class="loader-title">Loading the portfolio</p>
+    <p class="loader-text">Preparing selected work, branding highlights, and digital design details.</p>
+    <div class="loader-bar" aria-hidden="true"></div>
+  </div>
+</div>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="bg-spheres">
+  <div class="sphere s1"></div>
+  <div class="sphere s2"></div>
+  <div class="sphere s3"></div>
+  <div class="sphere s4"></div>
+  <div class="sphere s5"></div>
+  <div class="sphere s6"></div>
+</div>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="index.html" aria-label="Go to home page">
+        <img src="images/logo.png" alt="Silindile Kunene logo" loading="eager" decoding="async">
+      </a>
+      <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="nav-menu" id="nav-menu">
+      <ul>
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+<section class="hero" aria-labelledby="hero-title">
+  <div>
+    <h1 id="hero-title">I am <span id="changing-text" class="hero-name">Silindile</span></h1>
+    <p>
+      I am a South African-based Graphic Designer and UX/UI Designer creating modern branding,
+      logo systems, and user-centered digital experiences for startups, agencies, and growing businesses.
+    </p>
+  </div>
+
+  <div class="hero-img">
+    <img src="images/hero.jpg" alt="Portrait of Silindile Kunene" loading="eager" decoding="async">
+  </div>
+</section>
+
+<section class="work" id="work" aria-labelledby="work-title">
+  <h2 id="work-title">Featured Work</h2>
+
+  <div class="work-grid">
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-1" aria-label="Open Mzansi Bloom branding project">
+        <img src="images/work1.jpg" alt="Mzansi Bloom branding showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>Momo's Hair Corner</strong><span>Momo's Hair Corner - Brand Identity</span></span>
+      </button>
+    </div>
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-2" aria-label="Open NovaPay dashboard project">
+        <img src="images/work2.jpg" alt="NovaPay dashboard design showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>Nelo Pharmacy</strong><span>Pharmarcy - Brand Identity</span></span>
+      </button>
+    </div>
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-3" aria-label="Open Studio Sema social campaign project">
+        <img src="images/work3.jpg" alt="Studio Sema campaign showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>Something Property</strong><span>Property - Brand Identity</span></span>
+      </button>
+    </div>
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-4" aria-label="Open Koru skincare packaging project">
+        <img src="images/work4.jpg" alt="Koru skincare packaging showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>KlevaBari</strong><span>Clothing - Brand Identity</span></span>
+      </button>
+    </div>
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-5" aria-label="Open EchoHaus website project">
+        <img src="images/work5.jpg" alt="EchoHaus website showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>EchoHaus</strong><span>Creative website redesign</span></span>
+      </button>
+    </div>
+    <div class="work-card">
+      <button class="work-trigger" type="button" data-project="project-6" aria-label="Open Luma events launch kit project">
+        <img src="images/work6.jpg" alt="Luma events launch kit showcase" loading="lazy" decoding="async">
+        <span class="work-overlay"><strong>Luma Live</strong><span>Launch campaign system</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-title">
+  <div>
+    <h2 id="about-title">About Me</h2>
+    <p>
+      I am a multidisciplinary designer with experience in graphic design, UX/UI design, branding, and digital product design. My work focuses on combining strategy and visual storytelling to create meaningful user experiences.
+    </p>
+    <p>
+      I have worked across branding projects, digital campaigns, and interface design, helping businesses build strong visual identities that communicate clearly and professionally.
+    </p>
+  </div>
+
+  <img src="images/profile.jpg" alt="Silindile Kunene profile photo" loading="lazy" decoding="async">
+</section>
+
+<section class="cards" aria-label="Design specialties">
+  <div class="card">
+    <img src="images/graphic.jpg" alt="Graphic design showcase" loading="lazy" decoding="async">
+    <h3>Graphic Design</h3>
+  </div>
+
+  <div class="card">
+    <img src="images/ui.jpg" alt="UX and UI design showcase" loading="lazy" decoding="async">
+    <h3>UX/UI Design</h3>
+  </div>
+</section>
+
+<section class="cta" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title">Let's Build Something Great</h2>
+
+  <p>
+    Looking for a Graphic Designer or UX/UI Designer in South Africa? I'm available for freelance, contract, and full-time opportunities.
+  </p>
+
+  <p><a href="tel:+27814016273">Phone: 081 401 6273</a></p>
+  <p><a href="mailto:silindilemdima@gmail.com">Email: silindilemdima@gmail.com</a></p>
+</section>
+</main>
+
+<div class="lightbox" id="project-lightbox" aria-hidden="true">
+  <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+    <button class="lightbox-close" type="button" id="lightbox-close" aria-label="Close project lightbox">×</button>
+    <div class="lightbox-content">
+      <article class="project-panel" id="project-1" data-title="Mzansi Bloom">
+        <div class="project-story">
+          <div class="project-hero"><img src="images/Momo's-Hair-Corner-Logo-1-&-2.gif" alt="Momo's Hair Corner animated logo showcase" loading="lazy"></div>
+
+          <div class="story-block story-block--intro">
+            <div class="story-copy">
+              <span class="project-kicker">Brand Identity</span>
+              <h3 id="lightbox-title">Mzansi Bloom</h3>
+              <h4>This will be a sentence title for the project that will be placed here</h4>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+            <div class="story-copy">
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+          </div>
+
+          <div class="story-block story-block--duo">
+            <div class="project-shot"><img src="images/work1.jpg" alt="Mzansi Bloom supporting image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work1.jpg" alt="Mzansi Bloom supporting image two" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="story-block">
+            <div class="story-copy">
+              <div class="story-label">Project Reflection</div>
+              <h4>WHY THIS PROJECT IS IMPORTANT TO ME</h4>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+            </div>
+          </div>
+
+          <div class="project-hero"><img src="images/work1.jpg" alt="Mzansi Bloom full-width showcase" loading="lazy" decoding="async"></div>
+
+          <div class="story-block">
+            <div class="story-copy">
+              <div class="story-label">Creative Value</div>
+              <h4>WHY THIS PROJECT IS IMPORTANT TO ME</h4>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+            </div>
+          </div>
+
+          <div class="story-block story-block--aside">
+            <div class="project-shot"><img src="images/work1.jpg" alt="Mzansi Bloom final supporting image" loading="lazy" decoding="async"></div>
+            <div class="story-copy">
+              <h4>This will be a sentence title for the project that will be placed here</h4>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-panel" id="project-2" data-title="NovaPay">
+        <div class="project-gallery-flow">
+          <div class="project-hero"><img src="images/work2.jpg" alt="NovaPay hero showcase" loading="lazy" decoding="async"></div>
+
+          <div class="gallery-intro">
+            <div class="story-copy">
+              <span class="project-kicker">Product Design</span>
+              <h3>NovaPay</h3>
+              <h4>The Title want to place</h4>
+            </div>
+            <div class="story-copy">
+              <p>This is where the supporting text begins. It can explain the product story, the rationale behind the interface, and the overall visual direction behind the project.</p>
+              <p>This is where the supporting text begins. It can explain the product story, the rationale behind the interface, and the overall visual direction behind the project.</p>
+            </div>
+          </div>
+
+          <div class="gallery-grid-four">
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay gallery image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay gallery image two" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay gallery image three" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay gallery image four" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work2.jpg" alt="NovaPay full width interface showcase" loading="lazy" decoding="async"></div>
+
+          <div class="gallery-feature">
+            <div class="gallery-feature-copy">
+              <div class="story-copy">
+                <h4>The Title want to place</h4>
+                <p>This is where the supporting text begins. It can explain the product story, the rationale behind the interface, and the overall visual direction behind the project.</p>
+                <p>This is where the supporting text begins. It can explain the product story, the rationale behind the interface, and the overall visual direction behind the project.</p>
+              </div>
+              <div class="gallery-strip">
+                <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay supporting strip image one" loading="lazy" decoding="async"></div>
+                <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay supporting strip image two" loading="lazy" decoding="async"></div>
+              </div>
+            </div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay side detail image" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work2.jpg" alt="NovaPay wide process image" loading="lazy" decoding="async"></div>
+
+          <div class="gallery-strip">
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay paired image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay paired image two" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work2.jpg" alt="NovaPay final wide showcase" loading="lazy" decoding="async"></div>
+
+          <div class="gallery-grid-four">
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay closing gallery image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay closing gallery image two" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay closing gallery image three" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work2.jpg" alt="NovaPay closing gallery image four" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-panel" id="project-3" data-title="Studio Sema">
+        <div class="project-story">
+          <div class="project-hero"><img src="images/work3.jpg" alt="Studio Sema hero showcase" loading="lazy" decoding="async"></div>
+
+          <div class="story-block story-block--intro">
+            <div class="story-copy">
+              <span class="project-kicker">Campaign Design</span>
+              <h3>Studio Sema</h3>
+              <h4>This will be a sentence title for the project that will be placed here</h4>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+            <div class="story-copy">
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+          </div>
+
+          <div class="story-block story-block--duo">
+            <div class="project-shot"><img src="images/work3.jpg" alt="Studio Sema supporting image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work3.jpg" alt="Studio Sema supporting image two" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="story-block">
+            <div class="story-copy">
+              <div class="story-label">Project Reflection</div>
+              <h4>WHY THIS PROJECT IS IMPORTANT TO ME</h4>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+            </div>
+          </div>
+
+          <div class="project-hero"><img src="images/work3.jpg" alt="Studio Sema full-width showcase" loading="lazy" decoding="async"></div>
+
+          <div class="story-block">
+            <div class="story-copy">
+              <div class="story-label">Creative Value</div>
+              <h4>WHY THIS PROJECT IS IMPORTANT TO ME</h4>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+              <p>This is where the storytelling text begins. This will sit as an introductory paragraph to the project and help explain the meaning behind the work.</p>
+            </div>
+          </div>
+
+          <div class="story-block story-block--aside">
+            <div class="project-shot"><img src="images/work3.jpg" alt="Studio Sema final supporting image" loading="lazy" decoding="async"></div>
+            <div class="story-copy">
+              <h4>This will be a sentence title for the project that will be placed here</h4>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+              <p>This is where the storytelling text begins. This will act as an introductory paragraph to the project and explain the broader creative direction.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-panel" id="project-4" data-title="Koru Skin">
+        <div class="project-sequence">
+          <div class="project-hero"><img src="images/work4.jpg" alt="Koru Skin hero showcase" loading="lazy" decoding="async"></div>
+
+          <div class="sequence-intro">
+            <div class="story-copy">
+              <span class="project-kicker">Packaging Design</span>
+              <h3>Koru Skin</h3>
+              <h4>The Title want to place</h4>
+            </div>
+            <div class="story-copy">
+              <p>This is where the supporting text begins. It can explain the concept, visual decisions, and the overall direction taken for the project.</p>
+              <p>This is where the supporting text begins. It can explain the concept, visual decisions, and the overall direction taken for the project.</p>
+            </div>
+          </div>
+
+          <div class="sequence-row">
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin paired image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin paired image two" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work4.jpg" alt="Koru Skin wide transition image" loading="lazy" decoding="async"></div>
+
+          <div class="sequence-intro">
+            <div class="story-copy">
+              <h4>The Title want to place</h4>
+            </div>
+            <div class="story-copy">
+              <p>This is where the supporting text begins. It can explain the concept, visual decisions, and the overall direction taken for the project.</p>
+              <p>This is where the supporting text begins. It can explain the concept, visual decisions, and the overall direction taken for the project.</p>
+            </div>
+          </div>
+
+          <div class="sequence-strip">
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin strip image one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin strip image two" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin strip image three" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work4.jpg" alt="Koru Skin mid-gallery image" loading="lazy" decoding="async"></div>
+
+          <div class="project-shot sequence-center"><img src="images/work4.jpg" alt="Koru Skin centered feature image" loading="lazy" decoding="async"></div>
+
+          <div class="sequence-row">
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin lower pair one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin lower pair two" loading="lazy" decoding="async"></div>
+          </div>
+
+          <div class="project-hero"><img src="images/work4.jpg" alt="Koru Skin closing wide image" loading="lazy" decoding="async"></div>
+
+          <div class="sequence-row">
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin final pair one" loading="lazy" decoding="async"></div>
+            <div class="project-shot"><img src="images/work4.jpg" alt="Koru Skin final pair two" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-panel" id="project-5" data-title="EchoHaus">
+        <div class="project-hero"><img src="images/work5.jpg" alt="EchoHaus website redesign hero" loading="lazy" decoding="async"></div>
+        <div class="project-timeline">
+          <div class="project-copy">
+            <span class="project-kicker">Web Experience</span>
+            <h3>EchoHaus</h3>
+            <p>A creative website redesign with immersive pacing, stronger section rhythm, and a more memorable art-direction-led browsing experience.</p>
+          </div>
+          <div class="note-card">
+            <strong>Layout Direction</strong>
+            <p>This lightbox uses a story timeline format to present the redesign from landing impression to conversion moments.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>01. Landing mood</strong>
+            <p>Established the first impression with bold hero framing and expressive spacing.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>02. Browse flow</strong>
+            <p>Structured sections for easier scanning without flattening the brand personality.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>03. Conversion</strong>
+            <p>Clarified calls to action and supporting proof areas so inquiries felt more direct.</p>
+          </div>
+          <div class="timeline-item">
+            <strong>04. Responsive finish</strong>
+            <p>Adjusted layout behavior for mobile so the experience stayed intentional at every width.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-panel" id="project-6" data-title="Luma Live">
+        <div class="project-split">
+          <div class="project-copy">
+            <span class="project-kicker">Launch System</span>
+            <h3>Luma Live</h3>
+            <p>An events campaign toolkit designed to scale across digital posters, social assets, ticketing touchpoints, and high-energy promotional moments.</p>
+          </div>
+          <div class="project-shot"><img src="images/work6.jpg" alt="Luma Live launch campaign hero" loading="lazy" decoding="async"></div>
+        </div>
+        <div class="project-column">
+          <div class="stat-card"><span>Assets</span>Event key art, countdown graphics, venue screens, and social teasers.</div>
+          <div class="stat-card"><span>System</span>Bold type pairings and modular framing blocks for fast rollout.</div>
+          <div class="stat-card"><span>Audience</span>Young, visual-first attendees discovering the event online first.</div>
+          <div class="stat-card"><span>Impact</span>A launch kit with enough variety to stay energetic without losing consistency.</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Silindile Kunene | Graphic &amp; UX/UI Designer South Africa</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
